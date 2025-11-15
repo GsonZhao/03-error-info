@@ -4,4 +4,11 @@ version = "0.1.0"
 edition = "2024"
 license = "MIT"
 
+[lib]
+proc-macro = true
+
 [dependencies]
+darling = "0.21.3"
+proc-macro2 = "1.0.99"
+quote = "1.0.39"
+syn ={ version = "2.0.59", features = ["extra-traits"] }
